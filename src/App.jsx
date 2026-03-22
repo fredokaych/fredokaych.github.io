@@ -7,6 +7,7 @@ import Lecturers2007 from "./pages/Lecturers2007";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import ReactGA from "react-ga4";
+import { useTheme } from "./hooks/useTheme";
 
 function AnalyticsTracker() {
   const location = useLocation();
@@ -26,9 +27,11 @@ function AnalyticsTracker() {
 }
 
 export default function App() {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <>
-      <Header />
+      <Header toggleTheme={toggleTheme} theme={theme} />
       <AnalyticsTracker />
       <Routes>
         <Route path="/" element={<Home />} />

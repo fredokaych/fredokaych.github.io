@@ -1,9 +1,9 @@
-//components/Limeband.jsx
+//components/LimeBand.jsx
 import React from "react";
 
 const LimeBand = () => {
     return (
-        <section className="lime-band">
+        <div className="lime-band">
             <div className="lime-band-content">
                 <h2>Building Practical, Scalable & Human-Centered Systems</h2>
                 <p>
@@ -19,8 +19,7 @@ const LimeBand = () => {
                     <span>Community Tech</span>
                 </div>
             </div>
-
-        </section>
+        </div>
     );
 };
 

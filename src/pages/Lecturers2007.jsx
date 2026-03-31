@@ -6,14 +6,14 @@ const Lecturers2007 = () => {
     return (
         <main className="lecturers-page">
             {/* Page Hero / Header */}
-            <section className="lecturers-hero">
+            <div className="lecturers-hero">
                 <h1>57 Lecturers</h1>
                 <p>Osingo Mixed Secondary School – Class of 2007</p>
                 <p className="tagline">Once classmates. Always family.</p>
-            </section>
+            </div>
 
             {/* Grid of lecturers */}
-            <section className="lecturers-grid">
+            <div className="lecturers-grid">
                 {lecturers2007.map((person) => (
                     <div
                         key={person.id}
@@ -43,10 +43,8 @@ const Lecturers2007 = () => {
 
                         {person.status === "rip" && <span className="rip-label">RIP</span>}
                     </div>
-
-
                 ))}
-            </section>
+            </div>
         </main>
     );
 };

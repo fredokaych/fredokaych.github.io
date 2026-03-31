@@ -4,8 +4,18 @@ import fadeInSection from "../hooks/fadeInSection";
 import ProjectModal from "./ProjectModal";
 import ProjectCard from "./ProjectCard";
 
-// Updated Data: Added icons for visual flair
+// Updated Data: Added Wiga Ward Dashboard
 const projects = [
+
+  {
+    title: "Wiga Ward – Voter Registration Dashboard",
+    icon: "🗳️",
+    description:
+      "A real-time, cloud-synced dashboard for tracking daily voter registration statistics. Features interactive Chart.js visualizations, CSV import/export, and secure admin authentication via Supabase.",
+    stack: "React • Supabase • Chart.js",
+    live: "https://fredokaych.github.io/reg-data/",
+    github: "https://github.com/fredokaych/reg-data",
+  },
   {
     title: "ChamaFlow – Multi-Organization Platform",
     icon: "🏦",
@@ -14,6 +24,7 @@ const projects = [
     stack: "React • Supabase • PostgreSQL",
     live: "https://chamaflow-sooty.vercel.app/",
   },
+
   {
     title: "Victor Okuna – Campaign Website",
     icon: "🗳️",
@@ -81,17 +92,17 @@ const Projects = () => {
 
       <div className="grid projects-grid">
         {projects.map((project, index) => (
-          <ProjectCard 
-            key={index} 
-            project={project} 
-            onClick={() => setSelectedProject(project)} 
+          <ProjectCard
+            key={index}
+            project={project}
+            onClick={() => setSelectedProject(project)}
           />
         ))}
       </div>
 
-      <ProjectModal 
-        isOpen={!!selectedProject} 
-        onClose={() => setSelectedProject(null)} 
+      <ProjectModal
+        isOpen={!!selectedProject}
+        onClose={() => setSelectedProject(null)}
         project={selectedProject}
       />
     </section>

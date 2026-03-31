@@ -9,7 +9,7 @@ const projects = [
 
   {
     title: "Wiga Ward – Voter Registration Dashboard",
-    icon: "🗳️",
+    icon: "📈",
     description:
       "A real-time, cloud-synced dashboard for tracking daily voter registration statistics. Features interactive Chart.js visualizations, CSV import/export, and secure admin authentication via Supabase.",
     stack: "React • Supabase • Chart.js",
@@ -45,7 +45,7 @@ const projects = [
   },
   {
     title: "Pathfinding Algorithm Visualizer",
-    icon: "🗺️",
+    icon: "🤖",
     description:
       "An interactive in-browser visualization engine for graph traversal algorithms. It renders a dynamic grid and animates BFS, DFS, and A* step-by-step.",
     stack: "JavaScript • Algorithms • Canvas API",
@@ -63,7 +63,7 @@ const projects = [
   },
   {
     title: "Offline-First Task Manager",
-    icon: "📴",
+    icon: "💾",
     description:
       "A progressive web app that functions fully offline. Implements Service Workers for caching and LocalStorage for persistent state.",
     stack: "JavaScript • Service Workers • PWA",

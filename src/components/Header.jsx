@@ -1,10 +1,8 @@
 // components/Header.jsx
 import { useState } from 'react';
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import { useThemeContext } from "../context/ThemeContext";
 
-export default function Header() {
-    const { theme, toggleTheme } = useThemeContext();
+export default function Header({ theme, toggleTheme }) {
     const [menuOpen, setMenuOpen] = useState(false);
     const navigate = useNavigate();
     const location = useLocation();
